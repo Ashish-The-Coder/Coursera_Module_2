@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgba(150, 135, 135, 0.397);
+}
+
+#main-heading{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 175%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boxes{
+    position: relative;
+    border: 1px solid black;
+    background-color: rgb(94, 89, 89);
+    width: 30%;
+    height: 34%;
+    float: left;
+    margin-left: 35px;
+}
+
+#box-1{
+    background-color:rgba(252, 118, 106, 0.712);
+    color: #5F4B8BFF;
+}
+
+#box-2{
+    background-color:#ADEFD1FF;
+    color: #00203FFF;
+}
+
+#box-3{
+    color:#000;
+    background-color: #f3ca20;
+}
+
+.boxes > .box-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 150px;
+    font-size: 125%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#title-1{
+    background-color: #5F4B8BFF;
+    color: #FC766AFF;
+}
+
+#title-2{
+    background-color: rgba(3, 36, 70, 0.952);
+    color: #ADEFD1FF;
+}
+
+#title-3{
+    color:#f3ca20;
+    background-color: #000;
+}
+
+.boxes p{
+    font-weight: 600;
+    text-align: justify;
+    margin: 65px 25px;
+    font-size: 110%;
+}
+
+/**** Media Queries ****/
+
+/* For Phones */
+@media (max-width: 767px){
+    .boxes{
+        width: 85vw;
+        margin: 25px auto;
+    }
+}
+
+/* For Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    #box-1{
+        margin-left: 57px;
+    }
+    #box-1, #box-2{
+        width: 40vw;
+    }
+    #box-3{
+        margin-left: 57px;
+        margin-top: 25px;
+        width: 85vw;
+    }
+}
+
+/* Maintaining a error */
+@media (min-width: 992px) and (max-width: 1049px){
+    #box-3{
+        width: 25%;
+    }
+}
